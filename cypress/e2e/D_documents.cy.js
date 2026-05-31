@@ -4,12 +4,12 @@ describe('template spec', () => {
     cy.visitarPaginaInicial();
   })
 
-  it('Entrar na página de fotos', () => {
+  it('Entrar na página de documuentos', () => {
     cy.entrarPaginaDocumentos();
     
   })
 
-  it('Entrar na página do editor', () => {
+  it('Entrar na página com todos os documentos', () => {
     cy.verTodosDocumentos();
     
   })
