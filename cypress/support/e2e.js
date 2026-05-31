@@ -16,3 +16,4 @@
 // Import commands.js using ES2015 syntax:
 import './BaixarDocumentos'
 import './BaixarVideos'
+import './BaixarImages'
