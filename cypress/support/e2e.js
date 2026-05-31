@@ -17,3 +17,4 @@
 import './BaixarDocumentos'
 import './BaixarVideos'
 import './BaixarImages'
+import './BaixarAudio'
