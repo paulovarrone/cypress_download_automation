@@ -9,13 +9,13 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos os áudios', () => {
-    cy.verTodosAudios();
-    
-  })
 
   it('Download em massa', () => {
-    cy.massDownloadAUDIOS();
+    cy.dMP3();
+    cy.dWAV();
+    cy.dFLAC();
+    cy.dAAC();
+    cy.dOGG();
   })
 
 
