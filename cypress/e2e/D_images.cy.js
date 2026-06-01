@@ -9,13 +9,17 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos as imagens', () => {
-    cy.verTodasImagens();
-    
-  })
-
-  it('Download em massa', () => {
-    cy.massDownloadIMGS();
+  it('Download em massa', () => {  
+    cy.baixarJPG();
+    cy.baixarPNG();
+    cy.baixarSVG();
+    cy.baixarWebP();
+    cy.baixarAVIF();
+    cy.baixarHeic();
+    cy.baixarGIF();
+    cy.baixarTIFF();
+    cy.baixarBMP();
+    cy.baixarICO();
   })
 
 
