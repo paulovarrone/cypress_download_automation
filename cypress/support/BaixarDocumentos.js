@@ -17,3 +17,4 @@ Cypress.Commands.add('massDownloadDOCS', () => {
         cy.get('.mt-auto.flex.gap-2.pt-5').eq(`${i}`).find('a').contains('Download').click(); 
     }   
 })
+
