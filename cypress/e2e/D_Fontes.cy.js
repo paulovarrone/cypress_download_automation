@@ -9,13 +9,11 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos os fontes', () => {
-    cy.verTodosFontes();
-    
-  })
 
   it('Download em massa', () => {
-    cy.massDownloadFONTS();
+    cy.dTTF();
+    cy.dOTF();
+    cy.dWOFF2();
   })
 
 
