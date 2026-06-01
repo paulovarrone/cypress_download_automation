@@ -9,13 +9,12 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos os arquivos', () => {
-    cy.verTodosArquivos();
-    
-  })
-
   it('Download em massa', () => {
-    cy.massDownloadARCHIVES();
+    cy.dZIP();
+    cy.dTARGZ();
+    cy.dTARBZ2();
+    cy.dRAR();
+    cy.d7Z();
   })
 
 
