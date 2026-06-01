@@ -9,13 +9,16 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos os documentos', () => {
-    cy.verTodosDocumentos();
-    
-  })
 
   it('Download em massa', () => {
-    cy.massDownloadDOCS();
+    cy.dPDF();
+    cy.dDOCX();
+    cy.dEPUB();
+    cy.dXLSX();
+    cy.dPPTX();
+    cy.dCSV();
+    cy.dMarkdown();
+    cy.dTXT();
   })
 
 
