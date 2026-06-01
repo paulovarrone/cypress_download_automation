@@ -9,13 +9,16 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página com todos os data', () => {
-    cy.verTodosData();
-    
-  })
-
   it('Download em massa', () => {
-    cy.massDownloadDATA();
+    cy.dJSON();
+    cy.dYAML();
+    cy.dTOML();
+    cy.dXML();
+    cy.dSQL();
+    cy.dSQLite();
+    cy.dParquet();
+    cy.dLOG();
+    cy.dHTML();
   })
 
 
