@@ -9,13 +9,13 @@ describe('template spec', () => {
     
   })
 
-  it('Entrar na página de todos os videos', () => {
-    cy.verTodosVideos();
-    
-  })
 
   it('Download em massa', () => {
-    cy.massDownloadVIDEOS();
+    cy.dMP4();
+    cy.dMKV();
+    cy.dMOV();
+    cy.dAVI();
+    cy.dWebM();
   })
 
 
