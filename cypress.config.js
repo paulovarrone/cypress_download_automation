@@ -19,6 +19,7 @@ module.exports = defineConfig({
       '*facebook.net'
     ],
     testIsolation: false,
+    experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
     },
   },
