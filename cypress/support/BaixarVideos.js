@@ -45,7 +45,7 @@ Cypress.Commands.add('dAVI', () => {
 })
 
 Cypress.Commands.add('dWebM', () => {  
-    cy.get('#tab-3').click();  
+    cy.get('#tab-4').click();  
     cy.contains('a', 'View all WebM →').click(); 
     for(let i = 0; i < 4; i++) {
         cy.get('.mt-auto.flex.gap-2.pt-5').eq(`${i}`).find('a').contains('Download').click(); 
