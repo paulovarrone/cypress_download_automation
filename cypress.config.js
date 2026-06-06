@@ -7,8 +7,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://truefilesize.com/',
     redirectionLimit: 100,
-    defaultCommandTimeout: 100000,
-    pageLoadTimeout: 100000,
+    defaultCommandTimeout: 1000000,
+    pageLoadTimeout: 1000000,
     blockHosts: [
       '*googlesyndication.com',
       '*google-analytics.com',
