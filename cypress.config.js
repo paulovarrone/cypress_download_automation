@@ -3,12 +3,13 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
+  projectId: "d6aa76",
 
   e2e: {
     baseUrl: 'https://truefilesize.com/',
     redirectionLimit: 100,
-    defaultCommandTimeout: 1000000,
-    pageLoadTimeout: 1000000,
+    defaultCommandTimeout: 10000,
+    pageLoadTimeout: 6000,
     blockHosts: [
       '*googlesyndication.com',
       '*google-analytics.com',
