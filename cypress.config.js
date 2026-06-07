@@ -4,12 +4,12 @@ module.exports = defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
   projectId: "6pvy75",
-  
+
   e2e: {
     baseUrl: 'https://truefilesize.com/',
     redirectionLimit: 100,
     defaultCommandTimeout: 10000,
-    pageLoadTimeout: 6000,
+    pageLoadTimeout: 60000,
     blockHosts: [
       '*googlesyndication.com',
       '*google-analytics.com',
