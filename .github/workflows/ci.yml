@@ -10,6 +10,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false # https://github.com/cypress-io/github-action/issues/48
+      matrix:
+        containers: [1, 2] # Uses 2 parallel instances
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -19,6 +25,8 @@ jobs:
         with:
           browser: chrome   # downloads costumam ser mais estáveis no Chrome
 
+        records: true
+        parallel: true
       # Salva os arquivos baixados pra inspeção, se algum teste falhar
       - name: Upload downloads on failure
         if: failure()
@@ -26,3 +34,11 @@ jobs:
         with:
           name: cypress-downloads
           path: cypress/downloads
+
+
+        env:
+          # For recording and parallelization you must set your CYPRESS_RECORD_KEY
+          # in GitHub repo → Settings → Secrets → Actions
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # Create a token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
